@@ -8,24 +8,16 @@ public class Tenista implements ITenista {
     private int edad;
     private int rankingATP;
 
-    public Tenista() {
-    }
-
-    public Tenista(String nombre, int numTitulos, int edad, int rankintATP) {
+    public Tenista(String nombre, int numTitulos, int edad, int rankinATP) {
         this.nombre = nombre;
         this.numTitulos = numTitulos;
         this.edad = edad;
-        this.rankingATP = rankintATP;
+        this.rankingATP = rankinATP;
     }
 
     @Override
     public String toString() {
-        return "Tenista{" +
-                "nombre='" + nombre + '\'' +
-                ", numTitulos=" + numTitulos +
-                ", edad=" + edad +
-                ", rankingATP=" + rankingATP +
-                '}';
+        return "%7s [Titulos=%3d, Edad=%d, ATP=%d]".formatted(nombre, numTitulos, edad, rankingATP);
     }
 
     @Override
@@ -53,8 +45,8 @@ public class Tenista implements ITenista {
     }
 
     @Override
-    public void setNumTitulos(int numTItulos) {
-        this.numTitulos = numTItulos;
+    public void setNumTitulos(int numTitulos) {
+        this.numTitulos = numTitulos;
     }
 
     @Override
