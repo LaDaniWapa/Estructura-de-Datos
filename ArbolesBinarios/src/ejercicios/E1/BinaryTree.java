@@ -1,14 +1,12 @@
 package ejercicios.E1;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.List;
 
 public class BinaryTree<E> implements IBinaryTree<E> {
-    private BinaryNode<E> root;
-    private int size;
+    protected BinaryNode<E> root;
+    protected int size;
 
     public BinaryTree() {
         root = null;
@@ -206,7 +204,7 @@ public class BinaryTree<E> implements IBinaryTree<E> {
         return node.right != null;
     }
 
-    @Override
+    //@Override
     public BinaryNode<E> insertLeft(BinaryNode<E> node, E element) {
         if (node == null || element == null) return null;
 
@@ -220,7 +218,7 @@ public class BinaryTree<E> implements IBinaryTree<E> {
         return newNode;
     }
 
-    @Override
+    //@Override
     public BinaryNode<E> insertRight(BinaryNode<E> node, E element) {
         if (node == null || element == null) return null;
 

@@ -127,7 +127,7 @@ public interface IBinaryTree<E> {
      * @param element elemento a insertar
      * @return el nuevo nodo creado, o null si no se pudo insertar
      */
-    BinaryNode<E> insertLeft(BinaryNode<E> node, E element) throws IllegalStateException;
+    //BinaryNode<E> insertLeft(BinaryNode<E> node, E element) throws IllegalStateException;
 
     /**
      * Inserta un elemento como hijo derecho del nodo dado
@@ -135,7 +135,7 @@ public interface IBinaryTree<E> {
      * @param element elemento a insertar
      * @return el nuevo nodo creado, o null si no se pudo insertar
      */
-    BinaryNode<E> insertRight(BinaryNode<E> node, E element) throws IllegalStateException;
+    //BinaryNode<E> insertRight(BinaryNode<E> node, E element) throws IllegalStateException;
 
     /**
      * Busca un nodo por su elemento
