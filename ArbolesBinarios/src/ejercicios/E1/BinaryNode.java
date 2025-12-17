@@ -47,15 +47,18 @@ public class BinaryNode<E> {
         this.left = left;
     }
 
-    public void setLeft(E ele) {
-        this.left = new BinaryNode<>(ele);
-    }
-
     public void setRight(BinaryNode<E> right) {
         this.right = right;
     }
 
-    public void setRight(E ele) {
-        this.right = new BinaryNode<>(ele);
+    public void setElement(E ele) {
+        this.element = ele;
+    }
+
+    public int getNHijos() {
+        int hijos = 0;
+        if (left != null) hijos++;
+        if (right != null) hijos++;
+        return hijos;
     }
 }
